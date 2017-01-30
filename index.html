@@ -2,102 +2,117 @@
 <html>
 
 <head>
-    <title>BYU OIT AV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
-        crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
-    <link rel="stylesheet" href="styles/main.css">
+	<title>BYU OIT AV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 header">
-                <div class="row">
-                    <div class="col-md-4"><img class="logo" src="images/logo.svg"><span class="status-text">Status</span></div>
-                    <div id="refresh-text" class="col-md-8">refreshed 0 seconds ago</div>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <ul class="list-group">
-                    <li class="list-group-item disabled">
-                        <b>Orchestrators</b>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/av-api">av-api</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/av-api"><img src="https://circleci.com/gh/byuoitav/av-api.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/touchpanel-update-runner">touchpanel-update-runner</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/touchpanel-update-runner"><img src="https://circleci.com/gh/byuoitav/touchpanel-update-runner.svg?style=svg"></a></span>
-                    </li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item disabled">
-                        <b>Microservices</b>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/configuration-database-microservice">configuration-database-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/configuration-database-microservice"><img src="https://circleci.com/gh/byuoitav/configuration-database-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/ftp-microservice">ftp-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/ftp-microservice"><img src="https://circleci.com/gh/byuoitav/ftp-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/inventory-microservice">inventory-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/inventory-microservice"><img src="https://circleci.com/gh/byuoitav/inventory-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/pjlink-microservice">pjlink-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/pjlink-microservice"><img src="https://circleci.com/gh/byuoitav/pjlink-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/sony-control-microservice">sony-control-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/sony-control-microservice"><img src="https://circleci.com/gh/byuoitav/sony-control-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/telnet-microservice">telnet-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/telnet-microservice"><img src="https://circleci.com/gh/byuoitav/telnet-microservice.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/wait-for-restart-microservice">wait-for-restart-microservice</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/wait-for-restart-microservice"><img src="https://circleci.com/gh/byuoitav/wait-for-restart-microservice.svg?style=svg"></a></span>
-                    </li>
-                </ul>
-                <ul class="list-group">
-                    <li class="list-group-item disabled">
-                        <b>Miscellaneous</b>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/avengineers-slackbot">avengineers-slackbot</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/avengineers-slackbot"><img src="https://circleci.com/gh/byuoitav/avengineers-slackbot.svg?style=svg"></a></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://github.com/byuoitav/raspi-tp">raspi-tp</a>
-                        <span class="pull-right"><a href="https://circleci.com/gh/byuoitav/raspi-tp"><img src="https://circleci.com/gh/byuoitav/raspi-tp.svg?style=svg"></a></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 footer">
-                <hr>
-                <center>&copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> Brigham Young University. All rights reserved.</center>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 header">
+				<div class="row">
+					<div class="col-md-4"><img class="logo" src="images/logo.svg"><span class="status-text">Status</span></div>
+					<div id="refresh-text" class="col-md-8">refreshed 0 seconds ago</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<ul class="list-group">
+					<li class="list-group-item disabled">
+						<b>Orchestrators</b>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/av-api">av-api</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/av-api"><img src="https://circleci.com/gh/byuoitav/av-api.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/touchpanel-update-runner">touchpanel-update-runner</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/touchpanel-update-runner"><img src="https://circleci.com/gh/byuoitav/touchpanel-update-runner.svg?style=svg"></a></span>
+					</li>
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item disabled">
+						<b>Microservices</b>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/bearer-token-microservice">bearer-token-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/bearer-token-microservice"><img src="https://circleci.com/gh/byuoitav/bearer-token-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/configuration-database-microservice">configuration-database-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/configuration-database-microservice"><img src="https://circleci.com/gh/byuoitav/configuration-database-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/crestron-control-microservice">crestron-control-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/crestron-control-microservice"><img src="https://circleci.com/gh/byuoitav/crestron-control-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/ftp-microservice">ftp-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/ftp-microservice"><img src="https://circleci.com/gh/byuoitav/ftp-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/inventory-microservice">inventory-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/inventory-microservice"><img src="https://circleci.com/gh/byuoitav/inventory-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/london-audio-microservice">london-audio-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/london-audio-microservice"><img src="https://circleci.com/gh/byuoitav/london-audio-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/raspi-deployment-microservice">raspi-deployment-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/raspi-deployment-microservice"><img src="https://circleci.com/gh/byuoitav/raspi-deployment-microservice"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/pjlink-microservice">pjlink-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/pjlink-microservice"><img src="https://circleci.com/gh/byuoitav/pjlink-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/sony-control-microservice">sony-control-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/sony-control-microservice"><img src="https://circleci.com/gh/byuoitav/sony-control-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/telnet-microservice">telnet-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/telnet-microservice"><img src="https://circleci.com/gh/byuoitav/telnet-microservice.svg?style=svg"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/wait-for-restart-microservice">wait-for-restart-microservice</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/wait-for-restart-microservice"><img src="https://circleci.com/gh/byuoitav/wait-for-restart-microservice.svg?style=svg"></a></span>
+					</li>
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item disabled">
+						<b>Miscellaneous</b>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/raspi-database">raspi-database</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/raspi-database"><img src="https://circleci.com/gh/byuoitav/raspi-database"></a></span>
+					</li>
+					<li class="list-group-item">
+						<a href="https://github.com/byuoitav/raspi-tp">raspi-tp</a>
+						<span class="pull-right"><a href="https://circleci.com/gh/byuoitav/raspi-tp"><img src="https://circleci.com/gh/byuoitav/raspi-tp.svg?style=svg"></a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 footer">
+				<hr>
+				<center>&copy;
+					<script>
+						document.write(new Date().getFullYear())
+					</script> Brigham Young University. All rights reserved.</center>
+			</div>
+		</div>
+	</div>
 
 </body>
 
